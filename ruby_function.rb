@@ -90,7 +90,12 @@ def side_of_cube_to_volume(length)
   return length ** 3
 end
 
-def radius_to_sphere_volume (radius)
-  pi = 3.14
-  return pi * (radius ** 2)
+def radius_to_sphere_volume(radius)
+volume = (4.0 / 3.0) * (3.14 * (radius ** 3))
+return volume.round(2)
+end
+
+def farenheit_to_celsius(n)
+c = (n   - 32) * (5.0 / 9.0)
+return c.round(2)
 end
